@@ -18,9 +18,10 @@ public class ClassRoom {
 
     public void beginLecture(){
         System.out.println("LECTURE START");
-        System.out.println(teacher.doMainActivity());
+        String teacherInfo = teacher.doMainActivity();
+        System.out.println(teacherInfo);
         for(Student student : students){
-            System.out.println(student.doMainActivity());
+            System.out.println(student.doMainActivity(teacherInfo));
         }
     }
 }

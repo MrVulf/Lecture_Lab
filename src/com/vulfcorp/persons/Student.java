@@ -18,6 +18,10 @@ public class Student extends Person {
     }
 
     public String doMainActivity (){
+        return this.name+" do smt";
+    }
+
+    public String doMainActivity(String info){
         return this.name+" listen lecture";
     }
 }
