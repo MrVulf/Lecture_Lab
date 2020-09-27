@@ -9,7 +9,7 @@ public class Student extends Person {
         super.name=name;
     }
 
-    public static List<Teacher> makeStudents(int count){
+    public static List<Student> makeStudents(int count){
         List list = new ArrayList(count);
         for(int i = 0; i < count; i++){
             list.add(new Student("student#"+(i+1)));
